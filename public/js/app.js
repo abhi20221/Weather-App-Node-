@@ -1,3 +1,5 @@
+console.log("Hello World");
+
 const Search = document.querySelector("input");
 const messageOne = document.querySelector("#message-1");
 const messageSec = document.querySelector("#message-2");
