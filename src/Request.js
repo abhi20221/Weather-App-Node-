@@ -1,9 +1,10 @@
 const axios = require("axios");
+require('dotenv').config();
 
 const getWeather = async(location)=>{
     const {data} = await axios.get("http://api.weatherstack.com/current",{
         params:{
-            access_key:"673d7c2be9a3ca8a7450a1077fab7bd9",
+            access_key:process.env.SECRET_KEY,
             query:location
         } 
     })
